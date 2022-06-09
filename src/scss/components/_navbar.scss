@@ -3,8 +3,7 @@ header{
     height: auto;
     position: absolute;
     top: 0;
-
-    background-color: black;
+    z-index: 3;
 
     .header_content{
         height: auto;
@@ -16,7 +15,6 @@ header{
         align-items: center;
 
         .navs{
-
             nav{
                 a{
                     @media (max-width: 767px) {
