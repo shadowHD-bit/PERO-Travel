@@ -9,11 +9,65 @@ header{
     .header_content{
         height: auto;
         width: auto;
-        padding: 0px 160px;
+        padding: 27px 160px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+
+        .navs{
+
+            nav{
+                a{
+                    @media (max-width: 767px) {
+                        display: none;
+                    }
+
+                    @media (min-width: 768px) {
+                        display: contents;
+                        font-family: 'Montserrat', sans-serif;
+                        color: white;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 17px;
+                        text-decoration: none;
+                        transition: 0.5s ease all;
+                    }
+
+                    span{
+                        display: inline-block;
+                        margin: 0px 10px;
+                    }
+                }
+
+                i{
+                    @media (max-width: 767px) {
+                        display: contents;
+
+                    }
+
+                    @media (min-width: 768px) {
+                        display: none;
+
+                    }
+
+                    color: white;
+                    font-size: 40px;
+                }
+
+                i:hover{
+                    color: $yellow;
+                    transition: 0.5s ease all;
+                }
+
+
+                a:hover{
+                    color: $yellow;
+                    transition: 0.5s ease all;
+                }
+            }
+        }
 
     }
 }
