@@ -1,0 +1,14 @@
+// Main styles file
+
+@import "./settings/colors";
+@import "./settings/fonts";
+@import "./settings/variables";
+
+@import "./components/footer";
+@import "./components/navbar";
+@import "./components/videolazy";
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
