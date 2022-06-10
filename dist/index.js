@@ -45,7 +45,7 @@ let updateSliderCounter = function (slick, currentIndex, nextSlide) {
 jQuery(document).ready(function($) {
   $('.popular_slider').slick({
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
     centerMode: true,
     initialSlide: 1,

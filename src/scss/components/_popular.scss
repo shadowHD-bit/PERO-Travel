@@ -5,6 +5,10 @@
     .popular_content{
         height: 70vh;
         padding: 0px 160px;
+
+        @media (max-width: 768px) {
+            padding: 0px 79px;
+        }  
         
 
         .title_content{
@@ -31,6 +35,10 @@
                 line-height: 15px;
                 text-decoration-line: underline;
                 color: $black;
+
+                @media (max-width: 442px) {
+                    display: none;
+                }
             }
 
         }
@@ -46,17 +54,34 @@
             position: absolute;
             left: 200px;
             bottom: -110px;
+            @media (max-width: 768px) {
+                left: 130px;
+            }
+
+            @media (max-width: 442px) {
+                display: none;
+            }
             
 
             li{
                 width: calc(80vw / 8);
                 border-bottom: 3px solid $grey;
+                cursor: pointer;
+
+                @media (max-width: 1280px) {
+                    width: calc(60vw / 8);
+                }   
                 
+                @media (max-width: 442px) {
+                    display: none;
+                }
+
                 button{
                     display: none;
                 }
             }
 
+            
             .slick-active{
                 border-bottom: 3px solid $blue;
             }
@@ -83,6 +108,10 @@
                 flex-direction: column;
                 justify-content: end;
                 margin: 0px 20px;
+
+                @media (max-width: 768px) {
+                    width: 300px;
+                }
 
                 .type span{
                     font-family: 'Montserrat';

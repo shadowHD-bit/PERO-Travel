@@ -166,7 +166,7 @@
                 }
 
                 @media (max-width: 600px) {
-                    bottom: 50px;
+                    bottom: 100px;
                     right: 24px;
                 }
             }
@@ -199,6 +199,11 @@
                 justify-content: center;
                 align-items: center;
                 text-align: center;
+
+                @media (max-width: 768px){
+                    width: 295px;
+                    height: 187px;
+                }
 
                 i{
                     font-size: 40px;
