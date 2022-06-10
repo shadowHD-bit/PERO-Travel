@@ -73,5 +73,46 @@
 
             }
         }
+
+        .description{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 60px;
+            p{
+                max-width: 550px;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                text-align: center;
+                color: $black;
+            }
+
+            .description_btn{
+                background: $blue_gradient;
+                border-radius: 60px;
+                padding: 16px 50px;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+                color: #FFFFFF;
+                text-decoration: none;
+                transition: .5s ease all;
+
+                i{
+                    margin-left: 5px;
+                }
+            }
+
+            .description_btn:hover{
+                transition: .5s ease all;
+                background: linear-gradient(92.71deg, #0287c5 0%, #13928e 100%);
+            }
+        }
     }
 }
