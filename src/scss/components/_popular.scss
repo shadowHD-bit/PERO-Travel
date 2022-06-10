@@ -1,0 +1,204 @@
+.popular{
+    width: 100vw;
+    height: auto;
+
+    .popular_content{
+        height: 70vh;
+        padding: 0px 160px;
+        
+
+        .title_content{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            margin-top: 100px;
+
+            .title{
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 29px;
+                color: $blue;
+            }
+
+            .more a{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 15px;
+                text-decoration-line: underline;
+                color: $black;
+            }
+
+        }
+        .slick-list{
+            padding: 0px 0px !important;
+        }
+
+        .custom-dots{
+            display: flex;
+            padding-top: 100px;
+            flex-direction: row;
+            list-style: none;
+            position: absolute;
+            left: 200px;
+            bottom: -110px;
+            
+
+            li{
+                width: calc(80vw / 8);
+                border-bottom: 3px solid $grey;
+                
+                button{
+                    display: none;
+                }
+            }
+
+            .slick-active{
+                border-bottom: 3px solid $blue;
+            }
+               
+        }
+
+
+        .popular_slider{
+            position: absolute;
+            width: 100%;
+            z-index: 1;
+            right: 0;
+
+            .popular_item{
+                cursor: pointer;
+                width: 400px;
+                height: 497px;
+                border-radius: 10px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                padding: 16px;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                margin: 0px 20px;
+
+                .type span{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: #FFFFFF;
+                }
+
+                .title span{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: $yellow;
+                }
+
+                .pricetime{
+                    display: flex;
+                    flex-direction: row;
+                    margin: 10px;
+
+                    .time{
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 15px;
+                        color: #FFFFFF;
+
+                        span{
+                            margin-left: 5px;
+                        }
+                    }
+
+                    .price{
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 15px;
+                        color: #FFFFFF;
+                        margin-left: 10px;
+
+
+                        span{
+                            margin-left: 5px;
+                        }
+                    }
+                }
+
+                .about{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: #FFFFFF;
+                    margin-bottom: 10px;
+                }
+
+                .popular_btn{
+                    margin: 12px 0px;
+                    padding-bottom: 20px;
+                }
+
+                .popular_btn a{
+                    padding: 12px 43px;
+                    background: $blue_gradient;
+                    border-radius: 40px;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    transition: .5s ease all;
+                }
+
+                .popular_btn a:hover{
+                    transition: .5s ease all;
+                    background: linear-gradient(92.71deg, #0287c5 0%, #13928e 100%);
+                }
+            }
+        }
+
+        .navigate_slider{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            margin-top: 650px;
+
+            .btn_prev{
+                font-size: 40px;
+                color: $grey;
+                cursor: pointer;
+            }
+
+            .btn_prev:hover{
+                color: $blue;
+            }
+
+            .btn_next{
+                font-size: 40px;
+                color: $grey;
+                cursor: pointer;
+                margin-left: 20px;
+            }
+
+            .btn_next:hover{
+                color: $blue;
+            }
+        }
+    }
+}

@@ -38,3 +38,26 @@ let updateSliderCounter = function (slick, currentIndex, nextSlide) {
     updateSliderCounter(slick, currentSlide, nextSlide);
   });
 });
+
+
+
+
+jQuery(document).ready(function($) {
+  $('.popular_slider').slick({
+    dots: true,
+    infinite: false,
+    speed: 500,
+    centerMode: true,
+    initialSlide: 1,
+    arrows:true,
+    slideToShow: 4,
+    focusOnSelect: true,
+    slidesToScroll: 1,
+    autoplay: false,
+    variableWidth: true,
+    swipe: true,
+    dotsClass: 'custom-dots',
+    prevArrow: $('.btn_prev'),
+    nextArrow: $('.btn_next'),
+});
+});
