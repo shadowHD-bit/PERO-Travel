@@ -149,3 +149,20 @@ countBtnSort.addEventListener('click', () => {
     sortCountPlus.classList.add('fa-plus')
   }
 })
+
+let sortCountryPlus = document.querySelector('#country_plus_sort')
+let countryBtnSort = document.querySelector('.title_country_sort')
+let countrySortContent = document.querySelector('.country_sort_content')
+
+countryBtnSort.addEventListener('click', () => {
+  if(sortCountryPlus.className == 'fas fa-plus'){
+    countrySortContent.style.display = 'contents'
+    sortCountryPlus.classList.remove('fa-plus')
+    sortCountryPlus.classList.add('fa-minus')
+  }
+  else{
+    countrySortContent.style.display = 'none'
+    sortCountryPlus.classList.remove('fa-minus')
+    sortCountryPlus.classList.add('fa-plus')
+  }
+})
