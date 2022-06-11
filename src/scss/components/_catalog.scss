@@ -1,0 +1,239 @@
+.catalog{
+    width: auto;
+    height: auto;
+    position: relative;
+
+    .catalog_content{
+        padding: 0px 150px;
+        height: auto;
+
+        .title{
+            margin-top: 40px;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: white;
+            box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+
+            ul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin-bottom: 60px;
+
+                li{
+                    padding: 0 5px;
+                    border-bottom: 2px solid $black;
+                }
+
+                .active{
+                    a{
+                        color: $blue;
+                    }
+                    border-bottom: 2px solid $blue;
+    
+                }
+            }
+
+            a{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                color: #282828;
+                text-decoration: none;
+
+            }
+
+            .form{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                input{
+                    padding: 16px 25px;
+                    background: #FFFFFF;
+                    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+                    border-radius: 10px;
+                    border: none;
+                    width: 235px;
+                    margin: 5px;
+
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #000000;
+                }
+
+                #country{
+                    background: url(./img/locate.svg);
+                    background-repeat: no-repeat;
+                    background-position: right 20px center ;
+                } 
+
+                input::-webkit-calendar-picker-indicator{
+                    display: none;
+                }
+
+                #date{
+                    background: url(./img/cal.svg);
+                    background-repeat: no-repeat;
+                    background-position: right 20px center ;
+                }
+
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+
+                #people{
+                    background: url(./img/peaple.svg);
+                    background-repeat: no-repeat;
+                    background-position: right 20px center ;
+                }
+
+                button{
+                    background: linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%);
+                    border-radius: 10px;
+                    border: none;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #FFFFFF;
+                    cursor: pointer;
+                    padding: 0px 82px;
+                    margin-left: 10px;
+                }
+
+                button:hover{
+                    background: linear-gradient(92.71deg, #0375aa 0%, #11817e 100%);
+                }
+            }
+
+        }
+
+        .catalog_content{
+            margin-top: 40px;
+            display: flex;
+            flex-direction: row;
+
+            .sort{
+                width: 30%;
+                background-color: white;
+                box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+                border-radius: 10px;
+                padding: 35px 25px;
+
+                .title_sort{
+                    span{
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #0499DD;
+                    }
+                }
+  
+                .price_sort{
+                    margin-top: 30px;
+
+                    .title_price_sort{
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #282828;
+                        cursor: pointer;
+
+                        i{
+                            float: right;
+                            color: $blue;
+                        }
+                    }
+
+                    .price_sort_content{
+                        display: contents;
+
+                        input{
+                            padding: 7px 16px;
+                            background: #FFFFFF;
+                            border: 1px solid #EDEDED;
+                            border-radius: 40px;
+                            max-width: 100px;
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: #282828;
+                            margin-top: 20px;
+                        }
+
+                        #slider { 
+                            margin-top: 10px;
+                            height: 1px;
+                            border: 3px solid #D4D4D4;
+                            margin-bottom: 50px;
+                            
+                        }
+
+                        .ui-slider-handle {
+                            background: $blue;
+                            width: 10px;
+                            height: 10px;
+                            border: 2px solid $grey;
+                        }
+
+                        .ui-slider-range {
+                            border: 2px solid $blue;
+                            background: $blue;
+
+                        }
+
+                    }
+                }
+
+                .count_sort{
+                    margin-top: 30px;
+
+                    .title_count_sort{
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #282828;
+                        cursor: pointer;
+
+                        i{
+                            float: right;
+                            color: $blue;
+                        }
+                    }
+
+                    .count_sort_content{
+                        display: contents;
+
+
+                        
+
+                    }
+                }
+            }
+
+        }
+    }
+}

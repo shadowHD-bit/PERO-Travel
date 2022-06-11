@@ -81,3 +81,71 @@ jQuery(document).ready(function($) {
     nextArrow: $('.btn_nextt'),
 });
 });
+
+
+
+let sortPricePlus = document.querySelector('#price_plus_sort')
+let priceBtnSort = document.querySelector('.title_price_sort')
+let priceSortContent = document.querySelector('.price_sort_content')
+
+priceBtnSort.addEventListener('click', () => {
+  if(sortPricePlus.className == 'fas fa-plus'){
+    priceSortContent.style.display = 'contents'
+    sortPricePlus.classList.remove('fa-plus')
+    sortPricePlus.classList.add('fa-minus')
+  }
+  else{
+    priceSortContent.style.display = 'none'
+    sortPricePlus.classList.remove('fa-minus')
+    sortPricePlus.classList.add('fa-plus')
+  }
+})
+
+let lowerChange = document.querySelector('#lower')
+let upperChange = document.querySelector('#upper')
+
+let lowerValue = lowerChange.value
+let upperValuer = upperChange.value
+
+$('#slider').slider({
+  values: [lowerValue, upperValuer],
+  range: true,
+  min: 0,
+  max: 10000,
+  create: displaySliderValues,
+  slide: displaySliderValues
+})
+
+let values
+lowerChange.addEventListener('input', (e) => {
+  values = $( "#slider" ).slider( "values" );
+  $( "#slider" ).slider( "values", [ e.target.value, values[1]] )
+})
+upperChange.addEventListener('input', (e) => {
+  values = $( "#slider" ).slider( "values" );
+  $( "#slider" ).slider( "values", [ values[0], e.target.value] )
+})
+
+function displaySliderValues() {
+  $('#lower').val($('#slider').slider("values", 0));
+  $('#upper').val($('#slider').slider("values", 1));
+}
+
+
+
+let sortCountPlus = document.querySelector('#count_plus_sort')
+let countBtnSort = document.querySelector('.title_count_sort')
+let countSortContent = document.querySelector('.count_sort_content')
+
+countBtnSort.addEventListener('click', () => {
+  if(sortCountPlus.className == 'fas fa-plus'){
+    countSortContent.style.display = 'contents'
+    sortCountPlus.classList.remove('fa-plus')
+    sortCountPlus.classList.add('fa-minus')
+  }
+  else{
+    countSortContent.style.display = 'none'
+    sortCountPlus.classList.remove('fa-minus')
+    sortCountPlus.classList.add('fa-plus')
+  }
+})
