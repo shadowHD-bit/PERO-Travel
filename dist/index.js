@@ -77,7 +77,7 @@ jQuery(document).ready(function($) {
     variableWidth: true,
     swipe: true,
     dotsClass: 'custom-dots',
-    prevArrow: $('.btn_prev'),
-    nextArrow: $('.btn_next'),
+    prevArrow: $('.btn_prevv'),
+    nextArrow: $('.btn_nextt'),
 });
 });
