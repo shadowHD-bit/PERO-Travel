@@ -203,6 +203,11 @@
 
                         }
 
+                        hr{
+                            border: 1px solid #EDEDED;
+
+                        }
+
                     }
                 }
 
@@ -217,7 +222,7 @@
                         line-height: 17px;
                         color: #282828;
                         cursor: pointer;
-
+                        margin-bottom: 20px;
                         i{
                             float: right;
                             color: $blue;
@@ -227,8 +232,32 @@
                     .count_sort_content{
                         display: contents;
 
+                        a{
+                            display: inline-block;
+                            padding: 7px 20px;
+                            background: #FFFFFF;
+                            border: 1px solid #EDEDED;
+                            border-radius: 40px;
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: #282828;
+                            text-decoration: none;
+                            margin: 5px 5px
+                        }
 
+                        a:hover{
+                            border: 1px solid $blue;
+                            background-color: $blue;
+                            color: white;
+                        }
                         
+                        hr{
+                            margin-top: 20px;
+                            border: 1px solid #EDEDED;
+                        }
 
                     }
                 }
