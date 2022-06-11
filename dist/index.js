@@ -166,3 +166,39 @@ countryBtnSort.addEventListener('click', () => {
     sortCountryPlus.classList.add('fa-plus')
   }
 })
+
+
+let sortDatePlus = document.querySelector('#date_plus_sort')
+let dateBtnSort = document.querySelector('.title_date_sort')
+let dateSortContent = document.querySelector('.date_sort_content')
+
+dateBtnSort.addEventListener('click', () => {
+  if(sortDatePlus.className == 'fas fa-plus'){
+    dateSortContent.style.display = 'contents'
+    sortDatePlus.classList.remove('fa-plus')
+    sortDatePlus.classList.add('fa-minus')
+  }
+  else{
+    dateSortContent.style.display = 'none'
+    sortDatePlus.classList.remove('fa-minus')
+    sortDatePlus.classList.add('fa-plus')
+  }
+})
+
+
+let sortDurationPlus = document.querySelector('#duration_plus_sort')
+let durationBtnSort = document.querySelector('.title_duration_sort')
+let durationSortContent = document.querySelector('.duration_sort_content')
+
+durationBtnSort.addEventListener('click', () => {
+  if(sortDurationPlus.className == 'fas fa-plus'){
+    durationSortContent.style.display = 'contents'
+    sortDurationPlus.classList.remove('fa-plus')
+    sortDurationPlus.classList.add('fa-minus')
+  }
+  else{
+    durationSortContent.style.display = 'none'
+    sortDurationPlus.classList.remove('fa-minus')
+    sortDurationPlus.classList.add('fa-plus')
+  }
+})

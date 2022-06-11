@@ -4,7 +4,7 @@
     position: relative;
 
     .catalog_content{
-        padding: 0px 150px;
+        padding: 30px 150px;
         height: auto;
 
         .title{
@@ -254,15 +254,14 @@
                             color: white;
                         }
                         
-                        hr{
-                            margin-top: 20px;
-                            border: 1px solid #EDEDED;
-                        }
 
                     }
                 }
 
-
+                hr{
+                    margin-top: 20px;
+                    border: 1px solid #EDEDED;
+                }
                 .country_sort{
                     margin-top: 30px;
 
@@ -343,6 +342,59 @@
                             font-weight: normal;
                           }
                           
+                    }
+                }
+
+
+                .duration_sort{
+                    margin-top: 30px;
+
+                    .title_duration_sort{
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #282828;
+                        cursor: pointer;
+                        margin-bottom: 20px;
+                        i{
+                            float: right;
+                            color: $blue;
+                        }
+                    }
+
+                    .duration_sort_content{
+                        display: none;
+
+                        
+                
+                    }
+                }
+
+                .date_sort{
+                    margin-top: 30px;
+
+                    .title_date_sort{
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #282828;
+                        cursor: pointer;
+                        margin-bottom: 20px;
+                        i{
+                            float: right;
+                            color: $blue;
+                        }
+                    }
+
+                    .date_sort_content{
+                        display: none;
+
+                        
+                
                     }
                 }
             }
