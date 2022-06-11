@@ -2,6 +2,7 @@
     width: auto;
     height: auto;
     padding: 0px 20px;
+    margin-bottom: 50px;
 
     .galary_title{
         display: flex;
@@ -58,6 +59,23 @@
             margin: 0;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(.jpg);
             border-radius: 5px;
+            cursor: pointer;
+            position: relative;
+            width: auto;
+            height: auto;
+
+            img{
+                transition: 0.5s all ease;
+            }
+
+
+        }
+
+        .gallery__item:hover{
+            img{
+                transform: scale(1.05);
+                transition: 0.5s all ease;
+            }
         }
 
 

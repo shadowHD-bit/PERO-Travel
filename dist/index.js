@@ -61,3 +61,23 @@ jQuery(document).ready(function($) {
     nextArrow: $('.btn_next'),
 });
 });
+
+jQuery(document).ready(function($) {
+  $('.comment_slider').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    centerMode: true,
+    initialSlide: 1,
+    arrows:true,
+    slideToShow: 4,
+    focusOnSelect: true,
+    slidesToScroll: 1,
+    autoplay: false,
+    variableWidth: true,
+    swipe: true,
+    dotsClass: 'custom-dots',
+    prevArrow: $('.btn_prev'),
+    nextArrow: $('.btn_next'),
+});
+});
