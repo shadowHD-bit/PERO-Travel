@@ -1,0 +1,113 @@
+.itemlazy{
+    width: auto;
+    height: 640px;
+    position: relative;
+
+    .itemlazy_content{
+        width: 100%;
+        max-height: 640px;
+        position: relative;
+
+        video{
+            object-fit: cover;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            height: 640px;
+            width: 100%;
+        }
+
+        .itemlazy_title{
+            position: absolute;
+            z-index: 9;
+            margin-left: 160px;
+            margin-top: 242px;
+
+            .subtitle_item{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 29px;
+                color: #FFC700;
+                display: block;
+            }
+
+            .title_item{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 59px;
+                color: #FFFFFF;
+                display: block;
+            }
+
+            .btn_itemlazy{
+                display: flex;
+                flex-direction: row;
+                margin-top: 40px;
+                align-items: center;
+
+                .other{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #FFFFFF;
+                    background: linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%);
+                    border-radius: 60px;
+                    text-decoration: none;
+                    padding: 16px 40px;
+                    transition: .5s ease all;
+                    border: none;
+
+                    i{
+                        font-size: 14px;
+                    }
+                }
+
+                .other:hover{
+                    transition: .5s ease all;
+                    background: linear-gradient(92.71deg, #0287c5 0%, #13928e 100%);
+                }
+
+                
+                .btn_like{
+                    border-radius: 50%;
+                    width: 35px;
+                    height: 35px;
+                    border: 2px solid #EDEDED;
+                    margin: 10px 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #EDEDED;
+                    cursor: pointer;
+                    opacity: 0.3;
+                    backdrop-filter: blur(1000px);
+
+                    i{
+                        font-size: 20px;
+                        color: #d4d4d4;
+                    }
+                }
+
+
+                .btn_like:hover{
+                    opacity: 1;
+                    backdrop-filter: none;
+                    border: 2px solid  #0499DD;
+                    background-color: none;
+                    
+                    i{
+                        font-size: 20px;
+                        color:  #0499DD;
+                    }
+                }
+            }
+        }
+    }
+}
