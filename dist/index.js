@@ -202,3 +202,4 @@ durationBtnSort.addEventListener('click', () => {
     sortDurationPlus.classList.add('fa-plus')
   }
 })
+

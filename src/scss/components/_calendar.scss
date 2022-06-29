@@ -1,0 +1,150 @@
+.calendar {
+  width: auto;
+  height: auto;
+  position: relative;
+  background-color: white;
+  min-height: 900px;
+
+  .calendar_wrapper {
+    padding: 0px 160px;
+    position: relative;
+    width: auto;
+
+    .image_content {
+      position: absolute;
+      left: 0px;
+    }
+  }
+
+  .calendary_wrapper {
+    position: absolute;
+    right: 160px;
+    width: 560px;
+    height: 456px;
+    background: #ededed;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: 200px;
+
+    /* месяцы и годы */
+    #month-calendar {
+      width: 100%;
+    }
+
+    .month {
+      margin: 0;
+      padding: 3rem 2rem 2rem;
+      text-align: center;
+      list-style: none;
+      font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+
+        /* blue */
+
+        color: #0499DD;
+    }
+
+    .month-name{
+        margin-right: 5px;
+    }
+
+    .month li {
+      padding: 0;
+      margin: 0;
+      font-size: 1.5rem;
+      line-height: 1.4;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .data{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .month li.prev,
+    .month li.next {
+      cursor: pointer;
+    }
+
+    .month li.prev {
+      float: left;
+    }
+
+    .month li.next {
+      float: right;
+    }
+
+
+    /* дни недели */
+    .weekdays {
+      margin: 0;
+      padding: 1rem 0;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: left;
+    }
+
+    .weekdays li {
+      display: inline-block;
+      flex: 0 0 calc(100% / 7);
+      text-align: center;
+      font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+
+/* black */
+
+color: #282828;
+    }
+
+    /* дни */
+    .days {
+      margin: 0;
+      padding: 1rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: left;
+      align-content: flex-start;
+      height: 14rem;
+      width: 560px;
+    }
+
+    .days li {
+      list-style: none;
+      padding-bottom: 22px;
+      display: inline-block;
+      flex: 0 0 calc(560px / 7);
+      text-align: center;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      
+      /* black */
+      
+      color: #282828;
+    }
+
+    .days li.date-now {
+      color: #000;
+      font-weight: 700;
+    }
+  }
+}
