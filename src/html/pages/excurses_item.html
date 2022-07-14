@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/logo_color.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/logo_color.png" />
     <title>PERO TRAVEL - Путешешествуй вместе с нами...</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
 
     <!-- Font Awesome -->
     <script
@@ -23,33 +23,29 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
       rel="stylesheet"
     />
-
     <!-- JQ -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
     <!-- JQ UI -->
     <script src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
-    <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/sunny/jquery-ui.css">
-</head>
-<body>
+
+  </head>
+  <body>
     <!-- Navbar -->
     @@include('../components/navbar.html')
 
-      <!-- Main -->
-      <main class="excurse_main">
-        @@include('../components/itemlazy.html')
-        @@include('../components/iteminfoprice.html')
-        @@include('../components/calendar.html')
-
-
-      </main>
+    <!-- Main -->
+    <main class="excurse_main">
+      @@include('../components/itemlazy.html')
+      @@include('../components/iteminfoprice.html')
+      @@include('../components/calendar.html')
+      @@include('../components/description.html')
+    </main>
 
     <!-- Footer -->
     @@include('../components/footer.html')
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
-    <script src="./index.js"></script>
     <script src="./calendary.js"></script>
-
-</body>
+    <script src="./index.js"></script>
+  </body>
 </html>
