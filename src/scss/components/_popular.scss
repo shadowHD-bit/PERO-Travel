@@ -35,6 +35,7 @@
                 line-height: 15px;
                 text-decoration-line: underline;
                 color: $black;
+                
 
                 @media (max-width: 442px) {
                     display: none;
@@ -206,7 +207,11 @@
             height: auto;
             display: flex;
             flex-direction: row;
-            margin-top: 650px;
+            margin-top: 650px;  
+
+            @media (max-width: 443px) {
+                justify-content: center;
+            }
 
             .btn_prev{
                 font-size: 40px;

@@ -75,7 +75,7 @@
             width: calc(70vw / 4);
           }
 
-          @media (max-width: 442px) {
+          @media (max-width: 769px) {
             display: none;
           }
 
@@ -100,11 +100,47 @@
         cursor: pointer;
         position: relative;
 
+        @media (max-width: 440px) {
+          padding: 15px 10px;
+        }
+
+        @media (max-width: 835px) {
+          max-width: 540px;
+        }
+
+        @media (max-width: 634px) {
+          max-width: 340px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        @media (max-width: 440px) {
+          max-width: 240px;
+        }
+
+        .img{
+          img{
+            @media (max-width: 440px) {
+              width: 70%;
+              margin: 0 auto;
+            }
+    
+          }
+        }
+
         .description {
           margin-left: 30px;
           display: flex;
           flex-direction: column;
           background-color: #ededed;
+
+          @media (max-width: 634px) {
+            margin-top: 20px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          }
 
           .description_title {
             font-family: "Montserrat";
@@ -130,6 +166,10 @@
           position: absolute;
           z-index: 0;
           right: 0;
+          @media (max-width: 634px) {
+            bottom: -400px;
+          }
+
           span {
             font-family: "Marko One", serif;
             font-style: normal;

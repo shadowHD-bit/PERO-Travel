@@ -60,6 +60,10 @@
                     @media (max-width: 624px) {
                         font-size: 36px;
                     }
+
+                    @media (max-width: 380px) {
+                        font-size: 28px;
+                    }
                 }
 
                 .without{
@@ -82,6 +86,11 @@
                     @media (max-width: 624px) {
                         left: 150px;
                         font-size: 40px;
+                    }
+
+                    @media (max-width: 380px) {
+                        left: 150px;
+                        font-size: 25px;
                     }
                 }
 
@@ -106,6 +115,11 @@
                     @media (max-width: 624px) {
                         font-size: 72px;
                         line-height: 72px;
+                    }
+
+                    @media (max-width: 380px) {
+                        font-size: 50px;
+                        line-height: 50px;
                     }
                 }
 
