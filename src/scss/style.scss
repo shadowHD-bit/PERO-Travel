@@ -22,12 +22,14 @@
 @import "./components/description";
 @import "./components/other";
 @import "./components/main_info";
+@import "./components/last_item";
 
 html, body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     position: relative;
+    
 }
 
 body::-webkit-scrollbar {
