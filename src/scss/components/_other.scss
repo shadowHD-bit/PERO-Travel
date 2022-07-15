@@ -4,10 +4,14 @@
     background-color: white;
   .other_wrapper {
     padding: 80px 150px;
-    width: 100%;
+    width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 584px) {
+      padding: 40px 40px;
+    }
 
     .title_other p {
       font-family: "Montserrat";
@@ -22,10 +26,16 @@
         display: flex;
         flex-direction: row;
         margin-top: 80px;
-        
+        flex-wrap: wrap;
+
         .other_info_item{
             position: relative;
             margin: 0px 37px;
+
+            @media (max-width: 1600px) {
+              margin: 20px 37px;
+            }
+
             .yellow_circle{
                 position: absolute;
                 width: 57px;

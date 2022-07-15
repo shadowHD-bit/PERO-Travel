@@ -35,6 +35,21 @@
       width: 100%;
     }
 
+    @media (max-width: 576px) {
+      width: 460px;
+      height: 406px;
+    }
+
+    @media (max-width: 468px) {
+      width: 360px;
+      height: 366px;
+    }
+
+    @media (max-width: 360px) {
+      width: 310px;
+      height: 396px;
+    }
+
     .month {
       margin: 0;
       padding: 3rem 2rem 2rem;
@@ -46,10 +61,17 @@
         font-size: 24px;
         line-height: 29px;
         text-align: center;
-
-        /* blue */
-
         color: #0499DD;
+
+        @media (max-width: 468px) {
+          font-size: 15px;
+        line-height: 17px;
+        }
+
+        @media (max-width: 365px) {
+          font-size: 12px;
+        line-height: 13px;
+        }
     }
 
     .month-name{
@@ -64,6 +86,11 @@
       letter-spacing: 0.1rem;
       text-transform: uppercase;
       font-weight: 700;
+
+      @media (max-width: 468px) {
+        font-size: 1rem;
+      line-height: 1;
+      }
     }
 
     .data{
@@ -122,6 +149,16 @@ color: #282828;
       align-content: flex-start;
       height: 14rem;
       width: 560px;
+
+      @media (max-width: 576px) {
+        width: 460px;
+        padding: 5px 0px;
+      }
+
+      @media (max-width: 468px) {
+        width: 360px;
+        padding: 5px 0px;
+      }
     }
 
     .days li {
@@ -136,10 +173,16 @@ color: #282828;
       font-size: 18px;
       line-height: 22px;
       text-align: center;
-      
-      /* black */
-      
       color: #282828;
+
+      @media (max-width: 576px) {
+        flex: 0 0 calc(460px / 7);
+      }
+
+      @media (max-width: 468px) {
+        flex: 0 0 calc(360px / 7);
+
+      }
     }
 
     .days li.date-now {

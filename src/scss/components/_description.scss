@@ -9,8 +9,10 @@
     width: auto;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+
+    @media (max-width: 610px) {
+      padding: 0px 30px;
+    }
 
     .list_description {
       padding: 200px 0px;
@@ -18,20 +20,26 @@
       position: relative;
       z-index: 5;
       background-color: white;
-      -webkit-mask-image: linear-gradient(
-          to right,
-          rgba(0, 0, 0, 1),
-          rgba(0, 0, 0, 1),
-          rgba(0, 0, 0, 1),
-          rgba(0, 0, 0, 1),
 
-          rgba(0, 0, 0, 0)
-        );
+      @media (max-width: 1370px) {
+        width: 100%;
+      }
+
+
+      -webkit-mask-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0)
+      );
       -webkit-mask-size: 100% 100%;
       -webkit-mask-repeat: no-repeat;
 
-      .title_description {
-        text-align: center;
+      @media (max-width: 1370px) {
+        -webkit-mask-image: none;
+
       }
 
       .title_description p {
@@ -47,11 +55,12 @@
       .first_description {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
 
         .reasons {
           max-width: 402px;
+          @media (max-width: 1370px) {
+            max-width: fit-content;
+          }
 
           li {
             list-style: none;
@@ -81,8 +90,6 @@
       .next_first {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
 
         .next_title {
           font-family: "Montserrat";
@@ -96,6 +103,9 @@
         .list_next {
           ul {
             max-width: 402px;
+            @media (max-width: 1370px) {
+              max-width: fit-content;
+            }
 
             li {
               list-style: none;
@@ -133,6 +143,10 @@
       flex-direction: row;
       justify-content: flex-end;
       align-items: center;
+
+      @media (max-width: 1370px) {
+      display: none;
+    }
 
       .slider_wrapper {
         width: 100%;

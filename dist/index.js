@@ -83,6 +83,24 @@ jQuery(document).ready(function ($) {
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1666,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 1258,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+        }
+      },
+    ]
   });
 });
 

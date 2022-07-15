@@ -24,6 +24,14 @@
             margin-left: 160px;
             margin-top: 242px;
 
+            @media (max-width: 580px) {
+                margin-left: 100px;
+              }
+
+              @media (max-width: 450px) {
+                margin-left: 50px;
+              }
+
             .subtitle_item{
                 font-family: 'Montserrat';
                 font-style: normal;
@@ -42,6 +50,11 @@
                 line-height: 59px;
                 color: #FFFFFF;
                 display: block;
+
+                @media (max-width: 990px) {
+                    font-size: 30px;
+                    line-height: 30px;
+                  }
             }
 
             .btn_itemlazy{
@@ -49,6 +62,11 @@
                 flex-direction: row;
                 margin-top: 40px;
                 align-items: center;
+
+                @media (max-width: 380px) {
+                    flex-direction: column;
+                    justify-content: center;
+                  }
 
                 .other{
                     font-family: 'Montserrat';
@@ -63,6 +81,11 @@
                     padding: 16px 40px;
                     transition: .5s ease all;
                     border: none;
+
+                    @media (max-width: 380px) {
+                        font-size: 10px;
+                    line-height: 10px;
+                      }
 
                     i{
                         font-size: 14px;
