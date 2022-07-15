@@ -19,7 +19,10 @@ $(document).ready(function () {
   let item = $(".item");
   let bg_video = $(".source");
   let video = $("#bgplayvideo");
-  let video_container = document.getElementById('bgplayvideo')
+  let video_container = document.getElementById("bgplayvideo");
+
+  const play_btn = document.createElement('i');
+  play_btn.className = 'fas fa-play-circle';
 
   jQuery(document).ready(function ($) {
     $(".slider").slick({
@@ -38,12 +41,11 @@ $(document).ready(function () {
   let updateSliderCounter = function (slick, currentIndex, nextSlide) {
     let current = slick.slickCurrentSlide() + 1;
     let next = nextSlide + 1;
-    item[next - 1].innerHTML = '<i class="fas fa-play-circle"></i>';
-    $(item[current - 1]).html("");
+
     video_container.style.backgroundImage = `url(${scr_video_img[next]})`;
-    video_container.style.backgroundPosition = 'center'
-    video_container.style.backgroundRepeat = 'no-repeat'
-    video_container.style.backgroundSize = 'cover'
+    video_container.style.backgroundPosition = "center";
+    video_container.style.backgroundRepeat = "no-repeat";
+    video_container.style.backgroundSize = "cover";
 
     bg_video.attr("src", scr_video[next]);
     video.load();
@@ -123,7 +125,7 @@ let sortPricePlus = document.querySelector("#price_plus_sort");
 let priceBtnSort = document.querySelector(".title_price_sort");
 let priceSortContent = document.querySelector(".price_sort_content");
 
-priceBtnSort.addEventListener("click", () => {
+priceBtnSort.addEventListener("click", function (){
   if (sortPricePlus.className == "fas fa-plus") {
     priceSortContent.style.display = "contents";
     sortPricePlus.classList.remove("fa-plus");
@@ -228,3 +230,5 @@ durationBtnSort.addEventListener("click", () => {
     sortDurationPlus.classList.add("fa-plus");
   }
 });
+
+console.clear()

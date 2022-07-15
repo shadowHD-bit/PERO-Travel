@@ -176,6 +176,7 @@
 
         a:hover > i {
           color: $yellow;
+          z-index: 9999;
         }
 
         @media (max-width: 600px) {
