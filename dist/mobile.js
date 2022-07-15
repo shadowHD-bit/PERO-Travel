@@ -9,6 +9,8 @@ mobileButton.addEventListener("click", () => {
     win_mobile.style.visibility = "visible";
     header.style.backgroundColor = "#384D70";
     document.body.style.overflow = "hidden";
+    document.body.style.height = "100vh";
+
   } else {
     mobileButton.classList.remove("fa-times");
     mobileButton.classList.add("fa-bars");

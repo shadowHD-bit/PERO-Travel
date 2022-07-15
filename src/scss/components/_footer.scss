@@ -37,7 +37,14 @@ footer {
         color: #282828;
         margin: 8px 0px;
         text-decoration: none;
+        transition: 0.5s ease all;
       }
+
+      a:hover {
+        color: $yellow;
+        transition: 0.5s ease all;
+      }
+
       @media (max-width: 886px) {
         border-bottom: 1px solid black;
         width: 100%;
@@ -61,7 +68,14 @@ footer {
         color: #282828;
         text-decoration: none;
         margin: 8px 0px;
+        transition: 0.5s ease all;
       }
+
+      a:hover {
+        color: $yellow;
+        transition: 0.5s ease all;
+      }
+
       @media (max-width: 886px) {
         border-bottom: 1px solid black;
         width: 100%;
@@ -94,6 +108,13 @@ footer {
           font-size: 14px;
           line-height: 17px;
           color: #282828;
+          transition: 0.5s ease all;
+          cursor: pointer;
+        }
+
+        span:hover {
+          color: $yellow;
+          transition: 0.5s ease all;
         }
       }
 

@@ -25,6 +25,10 @@
         width: 100%;
       }
 
+      @media (max-width: 810px) {
+        padding: 50px 0px;
+      }
+
       -webkit-mask-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 1),

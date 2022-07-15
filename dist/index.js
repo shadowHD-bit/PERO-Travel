@@ -7,10 +7,20 @@ $(document).ready(function () {
     5: "./video/video.mp4",
   };
 
+  let scr_video_img = {
+    1: "./img/preview2.png",
+    2: "./img/preview1.png",
+    3: "./img/preview3.png",
+    4: "./img/preview2.png",
+    5: "./img/preview1.png",
+  };
+
   let $slider = $(".slider");
   let item = $(".item");
   let bg_video = $(".source");
   let video = $("#bgplayvideo");
+  let video_container = document.getElementById('bgplayvideo')
+
   jQuery(document).ready(function ($) {
     $(".slider").slick({
       dots: false,
@@ -30,6 +40,11 @@ $(document).ready(function () {
     let next = nextSlide + 1;
     item[next - 1].innerHTML = '<i class="fas fa-play-circle"></i>';
     $(item[current - 1]).html("");
+    video_container.style.backgroundImage = `url(${scr_video_img[next]})`;
+    video_container.style.backgroundPosition = 'center'
+    video_container.style.backgroundRepeat = 'no-repeat'
+    video_container.style.backgroundSize = 'cover'
+
     bg_video.attr("src", scr_video[next]);
     video.load();
   };

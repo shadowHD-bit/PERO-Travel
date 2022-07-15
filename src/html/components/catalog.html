@@ -1,17 +1,21 @@
 <section class="catalog">
   <div class="catalog_contents">
     <div class="title">
-      <ul>
-        <li class="current active"><a href="#">АВТОБУСНЫЙ ТУР</a></li>
-        <li class="current"><a href="#">ДЖИППИНГ</a></li>
-        <li class="current"><a href="#">ЯХТИНГ</a></li>
-        <li class="current"><a href="#">КАНЬОНИНГ</a></li>
-      </ul>
+      <form class="type_tour" action="">
+        <input type="radio" name="place" id="bus" checked />
+        <label for="bus">АВТОБУСНЫЙ ТУР</label>
+        <input type="radio" name="place" id="car" />
+        <label for="car">ДЖИПИНГ</label>
+        <input type="radio" name="place" id="ship" />
+        <label for="ship">ЯХТИНГ</label>
+        <input type="radio" name="place" id="place" />
+        <label for="place">КАНЬОНИНГ</label>
+      </form>
       <div class="form">
         <form action="" class="data">
           <input id="country" type="search" value="Абхазия" />
-          <input id="date" type="date" value="" />
-          <input id="people" type="text" value="5" />
+          <input id="date" type="date" value="2022-07-16" />
+          <input id="people" type="text" value="5 человек" />
           <button>Показать</button>
         </form>
       </div>
@@ -29,8 +33,6 @@
           <div class="price_sort_content">
             <input id="lower" type="number" value="1400" />
             <input id="upper" type="number" value="4000" />
-
-            <div id="slider"></div>
           </div>
         </div>
 

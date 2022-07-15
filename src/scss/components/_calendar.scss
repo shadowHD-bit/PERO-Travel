@@ -181,6 +181,10 @@
       @media (max-width: 468px) {
         flex: 0 0 calc(360px / 7);
       }
+
+      @media (max-width: 360px) {
+        flex: 0 0 calc(300px / 7);
+      }
     }
 
     .days li.date-now {

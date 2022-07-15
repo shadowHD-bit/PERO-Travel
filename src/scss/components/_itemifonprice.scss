@@ -12,6 +12,9 @@
   @media (max-width: 536px) {
     padding-bottom: 180px;
   }
+  @media (max-width: 464px) {
+    padding-bottom: 18px;
+  }
 
   .iteminfoprice_content {
     display: flex;
@@ -20,9 +23,7 @@
     align-items: center;
     height: 100%;
 
-    @media (max-width: 464px) {
-      padding: 0px 30px;
-    }
+    
 
     @media (max-width: 1634px) {
       padding: 0px 100px;
@@ -30,6 +31,10 @@
 
     @media (max-width: 1634px) {
       flex-direction: column;
+    }
+
+    @media (max-width: 464px) {
+      padding: 0px 10px;
     }
 
     .left_content {
