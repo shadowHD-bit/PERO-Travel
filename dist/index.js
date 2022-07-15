@@ -90,7 +90,7 @@ jQuery(document).ready(function ($) {
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
-        }
+        },
       },
       {
         breakpoint: 1258,
@@ -98,9 +98,9 @@ jQuery(document).ready(function ($) {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-        }
+        },
       },
-    ]
+    ],
   });
 });
 
@@ -149,7 +149,6 @@ function displaySliderValues() {
   $("#lower").val($("#slider").slider("values", 0));
   $("#upper").val($("#slider").slider("values", 1));
 }
-
 
 let sortCountPlus = document.querySelector("#count_plus_sort");
 let countBtnSort = document.querySelector(".title_count_sort");

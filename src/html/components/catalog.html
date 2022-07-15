@@ -1,143 +1,143 @@
 <section class="catalog">
-    <div class="catalog_contents">
-        <div class="title">
-            <ul>
-                <li class="current active"><a href="#">АВТОБУСНЫЙ ТУР</a></li>
-                <li class="current"><a href="#">ДЖИППИНГ</a></li>
-                <li class="current"><a href="#">ЯХТИНГ</a></li>
-                <li class="current"><a href="#">КАНЬОНИНГ</a></li>
-            </ul>
-            <div class="form">
-                <form action="" class="data">
-                    <input id="country" type="search" value="Абхазия">
-                    <input id="date" type="date" value="">
-                    <input id="people" type="text" value="5">
-                    <button>Показать</button>
-                </form>
-            </div>
-        </div>
-        <div class="catalog_content">
-            <div class="sort">
-                <div class="title_sort">
-                    <span>Фильтры</span>
-                </div>
-                <div class="price_sort">
-                    <div class="title_price_sort">
-                        <span id="price_btn">Стоимость</span>
-                        <i id="price_plus_sort" class="fas fa-minus"></i>
-                    </div>
-                    <div class="price_sort_content">
-                        <input id="lower" type="number" value="1400">
-                        <input id="upper" type="number" value="4000">
-
-                        <div id="slider"></div>
-                    </div>
-                </div>
-
-                <hr />
-
-                <div class="count_sort">
-                    <div class="title_count_sort">
-                        <span id="count_btn">Количество человек</span>
-                        <i id="count_plus_sort" class="fas fa-minus"></i>
-                    </div>
-                    <div class="count_sort_content">
-                        <a href="#">1 чел.</a>
-                        <a href="#">2 чел.</a>
-                        <a href="#">3 чел.</a>
-                        <a href="#">4 чел.</a>
-                        <a href="#">5 чел.</a>
-                        <a href="#">6 чел.</a>
-                        <a href="#">7 чел.</a>
-                        <a href="#">8 чел.</a>
-                        <a href="#">9 чел.</a>
-                        <a href="#">10 чел.</a>
-                        <a href="#">Больше 10 чел.</a>
-                    </div>
-                </div>
-
-                <hr />
-
-                <div class="country_sort">
-                    <div class="title_country_sort">
-                        <span id="country_btn">Место</span>
-                        <i id="country_plus_sort" class="fas fa-minus"></i>
-                    </div>
-                    <div class="country_sort_content">
-                        <div class="item_country">
-                            <input type="radio" id="ritema" name="ritem" value="ropt1" checked>
-                            <label for="ritema">Абхазия</label>
-                        </div>
-                        
-                        <div class="item_country">
-                            <input type="radio" id="ritemb" name="ritem" value="ropt2">
-                            <label for="ritemb">Красная поляна</label>
-                        </div>
-
-                        <div class="item_country">
-                            <input type="radio" id="ritemc" name="ritem" value="ropt3">
-                            <label for="ritemc">Сочи</label>
-                        </div>
-
-                        <div class="item_country">
-                            <input type="radio" id="ritemd" name="ritem" value="ropt4">
-                            <label for="ritemd">Адлер</label>
-                        </div>
-
-                        <div class="item_country">
-                            <input type="radio" id="ritemf" name="ritem" value="ropt5">
-                            <label for="ritemf">Адлер</label>
-                        </div>
-                    </div>
-                </div>
-
-                <hr />
-
-                <div class="duration_sort">
-                    <div class="title_duration_sort">
-                        <span id="duration_btn">Длительность</span>
-                        <i id="duration_plus_sort" class="fas fa-plus"></i>
-                    </div>
-                    <div class="duration_sort_content">
-                        
-                    </div>
-                </div>
-
-                <hr />
-
-                <div class="date_sort">
-                    <div class="title_date_sort">
-                        <span id="date_btn">Дата</span>
-                        <i id="date_plus_sort" class="fas fa-plus"></i>
-                    </div>
-                    <div class="date_sort_content">
-                        
-                    </div>
-                </div>
-
-                <hr />
-
-            </div>
-            <div class="excursess">
-                <div class="excursess_title">
-                    <span>Наши экскурсии</span>
-                </div>
-                <div class="excursess_content">
-                    @@include('../parts/_exurse_item.html')
-                    @@include('../parts/_exurse_item.html')
-                    @@include('../parts/_exurse_item.html')
-                    @@include('../parts/_exurse_item.html')
-                </div>
-                <div class="pagination">
-                    <a href="#"><i class="fas fa-angle-left"></i></a>
-                    <a href="#">1</a>
-                    <a href="#">2</a>
-                    <span>...</span>
-                    <a href="#">5</a>
-                    <a href="#"><i class="fas fa-angle-right"></i></a>
-                </div>
-            </div>
-        </div>
-        
+  <div class="catalog_contents">
+    <div class="title">
+      <ul>
+        <li class="current active"><a href="#">АВТОБУСНЫЙ ТУР</a></li>
+        <li class="current"><a href="#">ДЖИППИНГ</a></li>
+        <li class="current"><a href="#">ЯХТИНГ</a></li>
+        <li class="current"><a href="#">КАНЬОНИНГ</a></li>
+      </ul>
+      <div class="form">
+        <form action="" class="data">
+          <input id="country" type="search" value="Абхазия" />
+          <input id="date" type="date" value="" />
+          <input id="people" type="text" value="5" />
+          <button>Показать</button>
+        </form>
+      </div>
     </div>
+    <div class="catalog_content">
+      <div class="sort">
+        <div class="title_sort">
+          <span>Фильтры</span>
+        </div>
+        <div class="price_sort">
+          <div class="title_price_sort">
+            <span id="price_btn">Стоимость</span>
+            <i id="price_plus_sort" class="fas fa-minus"></i>
+          </div>
+          <div class="price_sort_content">
+            <input id="lower" type="number" value="1400" />
+            <input id="upper" type="number" value="4000" />
+
+            <div id="slider"></div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="count_sort">
+          <div class="title_count_sort">
+            <span id="count_btn">Количество человек</span>
+            <i id="count_plus_sort" class="fas fa-minus"></i>
+          </div>
+          <div class="count_sort_content">
+            <a href="#">1 чел.</a>
+            <a href="#">2 чел.</a>
+            <a href="#">3 чел.</a>
+            <a href="#">4 чел.</a>
+            <a href="#">5 чел.</a>
+            <a href="#">6 чел.</a>
+            <a href="#">7 чел.</a>
+            <a href="#">8 чел.</a>
+            <a href="#">9 чел.</a>
+            <a href="#">10 чел.</a>
+            <a href="#">Больше 10 чел.</a>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="country_sort">
+          <div class="title_country_sort">
+            <span id="country_btn">Место</span>
+            <i id="country_plus_sort" class="fas fa-minus"></i>
+          </div>
+          <div class="country_sort_content">
+            <div class="item_country">
+              <input
+                type="radio"
+                id="ritema"
+                name="ritem"
+                value="ropt1"
+                checked
+              />
+              <label for="ritema">Абхазия</label>
+            </div>
+
+            <div class="item_country">
+              <input type="radio" id="ritemb" name="ritem" value="ropt2" />
+              <label for="ritemb">Красная поляна</label>
+            </div>
+
+            <div class="item_country">
+              <input type="radio" id="ritemc" name="ritem" value="ropt3" />
+              <label for="ritemc">Сочи</label>
+            </div>
+
+            <div class="item_country">
+              <input type="radio" id="ritemd" name="ritem" value="ropt4" />
+              <label for="ritemd">Адлер</label>
+            </div>
+
+            <div class="item_country">
+              <input type="radio" id="ritemf" name="ritem" value="ropt5" />
+              <label for="ritemf">Адлер</label>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="duration_sort">
+          <div class="title_duration_sort">
+            <span id="duration_btn">Длительность</span>
+            <i id="duration_plus_sort" class="fas fa-plus"></i>
+          </div>
+          <div class="duration_sort_content"></div>
+        </div>
+
+        <hr />
+
+        <div class="date_sort">
+          <div class="title_date_sort">
+            <span id="date_btn">Дата</span>
+            <i id="date_plus_sort" class="fas fa-plus"></i>
+          </div>
+          <div class="date_sort_content"></div>
+        </div>
+
+        <hr />
+      </div>
+      <div class="excursess">
+        <div class="excursess_title">
+          <span>Наши экскурсии</span>
+        </div>
+        <div class="excursess_content">
+          @@include('../parts/_exurse_item.html')
+          @@include('../parts/_exurse_item.html')
+          @@include('../parts/_exurse_item.html')
+          @@include('../parts/_exurse_item.html')
+        </div>
+        <div class="pagination">
+          <a href="#"><i class="fas fa-angle-left"></i></a>
+          <a href="#">1</a>
+          <a href="#">2</a>
+          <span>...</span>
+          <a href="#">5</a>
+          <a href="#"><i class="fas fa-angle-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>

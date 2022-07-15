@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/logo_color.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/logo_color.png" />
     <title>PERO TRAVEL - Путешешествуй вместе с нами...</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
 
     <!-- Font Awesome -->
     <script
@@ -23,32 +23,25 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
       rel="stylesheet"
     />
-    
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navbar -->
     @@include('components/navbar.html')
 
-      <!-- Main -->
-      <main>
-
-        @@include('components/videolazy.html')
-        @@include('components/popular.html')
-        @@include('components/aboutus.html')
-        @@include('components/excurse.html')
-        @@include('components/galary.html')
-        @@include('components/comment.html')
-        @@include('components/contact.html')
-
-      </main>
+    <!-- Main -->
+    <main>
+      @@include('components/videolazy.html')
+      @@include('components/popular.html') @@include('components/aboutus.html')
+      @@include('components/excurse.html') @@include('components/galary.html')
+      @@include('components/comment.html') @@include('components/contact.html')
+    </main>
 
     <!-- Footer -->
     @@include('components/footer.html')
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
     <script src="./index.js"></script>
     <script src="./mobile.js"></script>
-
-</body>
+  </body>
 </html>

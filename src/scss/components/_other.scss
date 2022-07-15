@@ -1,7 +1,7 @@
 .other {
   width: auto;
   height: auto;
-    background-color: white;
+  background-color: white;
   .other_wrapper {
     padding: 80px 150px;
     width: auto;
@@ -22,60 +22,60 @@
       color: #0499dd;
     }
 
-    .other_content{
-        display: flex;
-        flex-direction: row;
-        margin-top: 80px;
-        flex-wrap: wrap;
+    .other_content {
+      display: flex;
+      flex-direction: row;
+      margin-top: 80px;
+      flex-wrap: wrap;
 
-        .other_info_item{
-            position: relative;
-            margin: 0px 37px;
+      .other_info_item {
+        position: relative;
+        margin: 0px 37px;
 
-            @media (max-width: 1600px) {
-              margin: 20px 37px;
-            }
-
-            .yellow_circle{
-                position: absolute;
-                width: 57px;
-                height: 57px;
-                background: #FFC700;
-                border-radius: 50%;
-                left: -15px;
-                top: -15px;
-            }
-
-            .main_info_up_age{
-                background: rgba(255, 255, 255, 0.2);
-                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-                backdrop-filter: blur(20px);
-                border-radius: 10px;
-                padding: 24px;
-
-                .big{
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 24px;
-                    line-height: 29px;
-                    color: #0499DD;
-                    padding: 0;
-                    margin: 0;
-                }
-
-                .other{
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 14px;
-                    line-height: 17px;
-                    color: #282828; 
-                    padding: 0;
-                    margin: 0;
-                }
-            } 
+        @media (max-width: 1600px) {
+          margin: 20px 37px;
         }
+
+        .yellow_circle {
+          position: absolute;
+          width: 57px;
+          height: 57px;
+          background: #ffc700;
+          border-radius: 50%;
+          left: -15px;
+          top: -15px;
+        }
+
+        .main_info_up_age {
+          background: rgba(255, 255, 255, 0.2);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(20px);
+          border-radius: 10px;
+          padding: 24px;
+
+          .big {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            color: #0499dd;
+            padding: 0;
+            margin: 0;
+          }
+
+          .other {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: #282828;
+            padding: 0;
+            margin: 0;
+          }
+        }
+      }
     }
   }
 }

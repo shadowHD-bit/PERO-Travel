@@ -55,27 +55,27 @@
       padding: 3rem 2rem 2rem;
       text-align: center;
       list-style: none;
-      font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 29px;
-        text-align: center;
-        color: #0499DD;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      color: #0499dd;
 
-        @media (max-width: 468px) {
-          font-size: 15px;
+      @media (max-width: 468px) {
+        font-size: 15px;
         line-height: 17px;
-        }
+      }
 
-        @media (max-width: 365px) {
-          font-size: 12px;
+      @media (max-width: 365px) {
+        font-size: 12px;
         line-height: 13px;
-        }
+      }
     }
 
-    .month-name{
-        margin-right: 5px;
+    .month-name {
+      margin-right: 5px;
     }
 
     .month li {
@@ -89,14 +89,14 @@
 
       @media (max-width: 468px) {
         font-size: 1rem;
-      line-height: 1;
+        line-height: 1;
       }
     }
 
-    .data{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+    .data {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
     }
 
     .month li.prev,
@@ -111,7 +111,6 @@
     .month li.next {
       float: right;
     }
-
 
     /* дни недели */
     .weekdays {
@@ -128,15 +127,15 @@
       display: inline-block;
       flex: 0 0 calc(100% / 7);
       text-align: center;
-      font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
 
-/* black */
+      /* black */
 
-color: #282828;
+      color: #282828;
     }
 
     /* дни */
@@ -167,7 +166,7 @@ color: #282828;
       display: inline-block;
       flex: 0 0 calc(560px / 7);
       text-align: center;
-      font-family: 'Montserrat';
+      font-family: "Montserrat";
       font-style: normal;
       font-weight: 500;
       font-size: 18px;
@@ -181,7 +180,6 @@ color: #282828;
 
       @media (max-width: 468px) {
         flex: 0 0 calc(360px / 7);
-
       }
     }
 

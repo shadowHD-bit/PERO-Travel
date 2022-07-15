@@ -25,7 +25,6 @@
         width: 100%;
       }
 
-
       -webkit-mask-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 1),
@@ -39,7 +38,6 @@
 
       @media (max-width: 1370px) {
         -webkit-mask-image: none;
-
       }
 
       .title_description p {
@@ -145,8 +143,8 @@
       align-items: center;
 
       @media (max-width: 1370px) {
-      display: none;
-    }
+        display: none;
+      }
 
       .slider_wrapper {
         width: 100%;
